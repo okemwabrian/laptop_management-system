@@ -24,9 +24,10 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-y)0%$)c&uh9-(xq4)%q-6)1^p53q36xzsh&ux&x!53(%mg@vm4'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []  # Update with your actual domain names in production
+ALLOWED_HOSTS = ['Okemwabrianny.pythonanywhere.com']
+  # Update with your actual domain names in production
 
 
 # Application definition
@@ -124,7 +125,10 @@ STATIC_URL = '/static/'
 # Static files directory (optional)
 STATICFILES_DIRS = [
     BASE_DIR / "static",  # Custom static files folder
+
+ 
 ]
+STATIC_ROOT = BASE_DIR / 'staticfiles'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
