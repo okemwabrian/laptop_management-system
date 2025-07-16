@@ -24,7 +24,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-y)0%$)c&uh9-(xq4)%q-6)1^p53q36xzsh&ux&x!53(%mg@vm4'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['Okemwabrianny.pythonanywhere.com']
   # Update with your actual domain names in production
@@ -122,7 +122,6 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-# Static files directory (optional)
 STATICFILES_DIRS = [
     BASE_DIR / "static",  # Custom static files folder
 
@@ -136,13 +135,12 @@ STATIC_ROOT = BASE_DIR / 'staticfiles'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 
-# Email settings (Gmail example)
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
-EMAIL_HOST_USER = 'your_email@gmail.com'  # 👈 your email
-EMAIL_HOST_PASSWORD = 'your_app_password_here'  # 👈 use an App Password (not your real password)
+EMAIL_HOST_USER = 'okemwabrian1350@gmail.com'  
+EMAIL_HOST_PASSWORD = 'Qwerty7890--'  
 
 
 # Media settings
